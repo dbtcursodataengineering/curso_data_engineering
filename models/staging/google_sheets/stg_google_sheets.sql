@@ -17,7 +17,7 @@ renamed_casted AS (
         , quantity 
         , _fivetran_synced
     FROM stg_budget_products
-    where _fivetran_synced >= '{{ var('budget_date')}}'
+
     )
 
 SELECT * FROM renamed_casted
